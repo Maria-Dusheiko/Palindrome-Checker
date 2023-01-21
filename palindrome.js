@@ -6,11 +6,13 @@
     text.innerHTML = text;
     let aux = text.toLowerCase().split(/[^a-z0-9]/gi).join('').split('');
      
-   if (aux.join('') == aux.reverse().join('')){
+   if (aux == ""){
+      document.getElementById("answer").innerHTML = "You don`t enter text!";
+   } else if (aux.join('') == aux.reverse().join('')) {
       document.getElementById("answer").innerHTML = "It is palindrome!";
-   } else {
+   } else  {
       document.getElementById("answer").innerHTML = "It is not palindrome!";
-   } 
+   }
   
 }
 
