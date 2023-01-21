@@ -1,0 +1,40 @@
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    color: rgb(36, 41, 74);
+    background:  linear-gradient(to right, #bce0f0,#9bb7f8);
+     text-align: center;
+     display: flex;
+     margin: auto;
+     padding: 15px;
+     line-height: 2em;
+    text-shadow: 2px 2px 2px rgb(118, 141, 226);
+        flex-direction: column;
+        align-items: center;
+}
+
+h1, p{
+      font-size: 30px;
+    
+}
+label {
+    font-size: 20px;
+}
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(107, 132, 242);
+    border: 3px solid rgb(107, 132, 242);
+    border-radius: 40px;
+    min-height: 30px;
+    min-width: 120px;
+}
+ 
+
+.btn:hover {
+  color: rgb(242, 244, 123);
+    box-shadow: 0px 0px 2px 2px rgb(242, 244, 123);
+      border: 3px solid rgb(242, 244, 123);
+    background-color: rgba(102, 128, 246, 0.833);
+    transition: 0.6s; 
+} 
+
