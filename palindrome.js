@@ -1,9 +1,15 @@
-function palindrome(str) {
-  const string = str.toLowerCase().split(/[^A-Za-z0-9]/gi).join('');
-  const aux = string.split('');
-  if (aux.join('') === aux.reverse().join('')){
-    return true;
-  }
+
+
+ function palindrome() {
+  let text = document.getElementById("palind").value
+  text.innerHTML = text.toLowerCase().split(/[^A-Za-z0-9]/gi).join('');
+  let aux = text.split('');
  
-  return false;
+   if (aux.join(' ') == aux.reverse().join(' ')){
+      document.getElementById("answer").innerHTML = "It is palindrome!";
+   } else {
+      document.getElementById("answer").innerHTML = "It is not palindrome";
+  }
+  
 }
+
